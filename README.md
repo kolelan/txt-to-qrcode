@@ -61,3 +61,19 @@ python txt_to_qrcode.py "example" --output "out"
 - `example\certs\ssl\service.crt`
 
 Каждый из них можно обработать отдельно или вместе через папку `example`.
+
+## Созданные QR-коды (`qrcodes`)
+
+Папка `qrcodes` была создана командой:
+
+```bash
+python txt_to_qrcode.py "example" --output "qrcodes"
+```
+
+Скрипт повторил структуру входной папки `example` и сохранил PNG в соответствующие подпапки.
+
+Ссылки на сгенерированные QR-коды:
+
+- [wifi_password_txt.png](qrcodes/wifi_password_txt.png)
+- [wg_tunnel_conf.png](qrcodes/network/wg_tunnel_conf.png)
+- [service_crt.png](qrcodes/certs/ssl/service_crt.png)
